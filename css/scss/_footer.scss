@@ -1,0 +1,20 @@
+.footer {
+    .desc-table {
+        margin-top: 44px;
+
+        .desc {
+            font-size: 12px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.4);
+            margin-bottom: 37px;
+
+            &.first {
+                margin-bottom: 14px;
+            }
+
+            a {
+                color: #cdcdcd;
+            }
+        }
+    }
+}

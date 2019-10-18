@@ -1,0 +1,42 @@
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    &.hidden-mobile {
+        display: table;
+    }
+
+    &.hidden-desktop {
+        display: none;
+    }
+
+    thead {
+        width: 100%;
+    }
+
+    tr {
+        &.hidden-mobile {
+            display: table-row;
+        }
+
+        &.hidden-desktop {
+            display: none;
+        }
+
+        td {
+            position: relative;
+            z-index: 3;
+            padding: 0;
+            margin: 0;
+
+            &.hidden-mobile {
+                display: table-cell;
+            }
+
+            &.hidden-desktop {
+                display: none;
+            }
+        }
+    }
+}

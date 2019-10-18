@@ -1,0 +1,40 @@
+.problem table {
+    width: 480px;
+    text-align: center;
+
+    img {
+        
+    }
+
+
+    .btn {
+        display: block;
+        z-index: 10;
+        height: 27px;
+        width: 280px;
+        color: #5e4eff;
+        border: 2px solid #5e4eff;
+        background-color: transparent;
+        font-family: 'Roboto', sans-serif;
+        text-transform: capitalize;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: center;
+        overflow: hidden;
+        text-decoration: none;
+        cursor: pointer;
+        padding-top:15px;
+        padding-bottom:15px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .btn:hover {
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+    }
+
+    #follow-mobile{
+        display: none;
+    }
+}
