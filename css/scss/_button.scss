@@ -5,23 +5,22 @@ button {
 
 .btn {
     z-index: 10;
-    display: inline-block;
+    display: block;
     height: 45px;
-    width: 189px;
+    width: 250px;
     line-height: 45px;
     background: #FFBF00;
     color: #fff;
     font-size: 14px;
     font-weight: 700;
-    font-family: 'Oswald', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     overflow: hidden;
     transition: box-shadow 0.2s;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-    margin-left: 23px;
-    margin-top: 10px;
+    margin: 0 auto;
 }
 
 .btn:hover {
