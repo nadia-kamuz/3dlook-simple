@@ -6,10 +6,369 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>3DLOOK</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto:400,700&display=swap">
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+   <style type="text/css">
+       @import url("https://fonts.googleapis.com/css?family=Oswald:700|Roboto:400,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F6F8;
+  font-family: "Roboto", Arial, sans-serif;
+}
+body p,
+body a,
+body td {
+  font-family: "Roboto", Arial, sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+body .container {
+  width: 100%;
+}
+body .pl-20 {
+  padding-left: 20px;
+}
+body .pre-text {
+  display: none !important;
+  visibility: hidden;
+  mso-hide: all;
+  font-size: 1px;
+  color: #ffffff;
+  line-height: 1px;
+  max-height: 0px;
+  max-width: 0px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table.hidden-mobile {
+  display: table;
+}
+table.hidden-desktop {
+  display: none;
+}
+table thead {
+  width: 100%;
+}
+table tr.hidden-mobile {
+  display: table-row;
+}
+table tr.hidden-desktop {
+  display: none;
+}
+table tr td {
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  margin: 0;
+}
+table tr td.hidden-mobile {
+  display: table-cell;
+}
+table tr td.hidden-desktop {
+  display: none;
+}
+
+h2 {
+  color: #282828;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 43px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 700;
+  line-height: 20px;
+  margin-top: 23px;
+  margin-bottom: 14px;
+}
+
+p {
+  color: #282828;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 39px;
+}
+
+a {
+  color: #282828;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+}
+
+.hide-header {
+  display: none;
+}
+
+.header .header-table {
+  width: 600px;
+  height: 31px;
+  table-layout: fixed;
+}
+.header .header-table .header-logo-container {
+  padding-left: 60px;
+}
+.header .header-table .header-logo-container .header-logo {
+  position: relative;
+  width: 148px;
+  height: 21px;
+  margin: 15px 0 0 0;
+}
+.header .header-table .header-navigation-container {
+  text-align: right;
+}
+.header .header-table .header-navigation-container li {
+  margin-right: 0;
+}
+.header .header-table .header-navigation {
+  margin: 5px 60px 0 0;
+}
+.header .header-table .header-navigation li {
+  margin-top: 11px;
+  margin-right: 38px;
+  display: inline-block;
+}
+.header .header-table .header-navigation li:last-child {
+  margin-right: 0;
+}
+.header .header-table .header-navigation li a {
+  color: #000;
+  opacity: 0.7;
+  transition: opacity 0.25s, color 0.25s;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.43px;
+  text-align: center;
+}
+.header .header-table .header-navigation li:hover {
+  opacity: 1;
+  color: #FFC200;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  z-index: 10;
+  display: block;
+  height: 45px;
+  width: 250px !important;
+  line-height: 45px;
+  background: #FFBF00;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  box-shadow: 0 4px 20px 0 rgba(255, 197, 0, 0.4);
+}
+
+.content .main-content h2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.content .main-content h2 img {
+  vertical-align: bottom;
+}
+.content .main-content p img {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.content .main-content .magazine-image {
+  width: 100%;
+}
+.content .hidden-mobile table {
+  margin-bottom: 30px;
+}
+
+.footer .desc-table {
+  margin-top: 44px;
+}
+.footer .desc-table .desc {
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 37px;
+}
+.footer .desc-table .desc.first {
+  margin-bottom: 0;
+}
+.footer .desc-table .desc a {
+  color: #cdcdcd;
+}
+
+@media screen and (max-width: 600px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .contact > td,
+.hello > td,
+.footer > td {
+    padding: 0 20px !important;
+  }
+
+  .social-icons td {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+  .social-icons td a {
+    text-align: center;
+    line-height: 45px;
+  }
+  .social-icons td a img {
+    display: inline-block;
+    max-width: 22px;
+  }
+
+  table {
+    width: 100% !important;
+  }
+  table.hidden-desktop {
+    display: table !important;
+  }
+  table.hidden-mobile {
+    display: none;
+  }
+  table tr.hidden-desktop {
+    display: table-row !important;
+  }
+  table tr.hidden-mobile {
+    display: none;
+  }
+  table tr td.hidden-desktop {
+    display: table-cell !important;
+  }
+  table tr td.hidden-mobile {
+    display: none;
+  }
+
+  .header .header-table {
+    height: 31px;
+  }
+  .header .header-table .header-logo-container {
+    padding-left: 20px !important;
+    vertical-align: top;
+  }
+  .header .header-table .header-logo-container .header-logo {
+    margin-bottom: 37px !important;
+  }
+  .header .header-table .header-navigation-container {
+    padding-right: 0;
+  }
+  .header .header-table .header-navigation-container .header-navigation {
+    margin-right: 38px !important;
+  }
+
+  .content h2 {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  table {
+    width: 100%;
+  }
+
+  .header .header-table .header-logo-container .header-logo {
+    width: 113px !important;
+    height: 16px !important;
+  }
+  .header .header-table .header-navigation-container {
+    top: 2px;
+  }
+  .header .header-table .header-navigation-container .header-navigation {
+    margin-top: 6px !important;
+    margin-right: 10px !important;
+  }
+  .header .header-table .header-navigation-container .header-navigation li {
+    margin-top: 4px !important;
+    margin-right: 20px !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .social table h3 {
+    margin: 10px 0 10px 20px !important;
+  }
+  .social table #follow-mobile {
+    display: table-cell !important;
+  }
+  .social table #follow-mobile img {
+    display: block;
+    margin: 0 auto;
+  }
+  .social table #follow-desktop {
+    display: none !important;
+  }
+
+  .content .hidden-desktop.article table tr:nth-child(2) td {
+    height: 233px !important;
+  }
+
+  .problem table #follow-mobile {
+    display: table-cell !important;
+  }
+  .problem table #follow-mobile img {
+    display: block;
+    margin: 0 auto;
+  }
+  .problem table #follow-desktop {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 341px) {
+  .content .hidden-desktop.article table tr:nth-child(2) td {
+    height: 255px !important;
+  }
+}
+@media screen and (max-width: 339px) {
+  .content .hidden-desktop.article table tr:nth-child(2) td {
+    height: 275px !important;
+  }
+}
+@media screen and (max-width: 332px) {
+  .content .hidden-desktop.article table tr:nth-child(2) td {
+    height: 275px !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+   </style>
 </head>
 <body>
     <div class="pre-text">Confirm your subscription here to get access to the latest 3DLOOK newsletters.&zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;</div>
