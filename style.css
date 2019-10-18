@@ -394,14 +394,14 @@ button {
   }
 
   .header .header-table {
-    height: 225px;
+    height: 31px;
   }
   .header .header-table .header-logo-container {
     padding-left: 20px !important;
     vertical-align: top;
   }
   .header .header-table .header-logo-container .header-logo {
-    margin-bottom: 97px !important;
+    margin-bottom: 37px !important;
   }
   .header .header-table .header-navigation-container {
     padding-right: 0;
@@ -426,6 +426,10 @@ button {
     display: block;
     margin-bottom: 10px;
     margin-left: 20px;
+  }
+
+  .content h2 {
+    margin-top: 0;
   }
 
   .article.hidden-desktop span a {
